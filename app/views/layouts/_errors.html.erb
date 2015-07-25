@@ -1,0 +1,10 @@
+<% if object.errors.any? %>
+  <h4>Errors, try again</h4>
+  <% @list.errors.full_messages.each do |msg| %>
+    <ul>
+      <li><%= msg %></li>
+    </ul>
+  <% end %>
+<% end %>
+
+

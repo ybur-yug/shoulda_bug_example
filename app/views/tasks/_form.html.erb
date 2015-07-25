@@ -1,0 +1,6 @@
+<%= render 'layouts/errors', :object => @task %>
+
+<%= simple_form_for [@list, @task] do |f| %>
+  <%= f.input :description %>
+  <%= f.button :submit %>
+<% end %>

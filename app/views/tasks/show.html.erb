@@ -1,0 +1,13 @@
+<h1>Task</h1>
+
+<%= @task.description %>
+<p><%= link_to "delete task", list_task_path(@list, @task),
+                                data: {
+                                  confirm: "are you sure?",
+                                  method:  "delete"
+                                }%></p>
+
+<p><%= link_to "edit task", action: :edit,
+                            id: @task.id,
+                            list_id: @list.id %>
+</p>
